@@ -1,0 +1,16 @@
+<h1>ngIf example in angular</h1>
+<p *ngIf="isValid">
+	Data is valid.
+</p>
+<p *ngIf="!isValid">
+	Data is not valid.
+</p>
+
+<div *ngFor="let id of numbers">
+  <div *ngIf="id%2 == 0">
+	<div>{{id}}-Even Number</div>
+  </div> 	
+  <div *ngIf="id%2 == 1">
+	<div>{{id}}-Odd Number</div>
+  </div> 	
+</div>
